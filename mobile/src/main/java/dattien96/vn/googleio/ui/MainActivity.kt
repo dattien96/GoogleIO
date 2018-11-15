@@ -1,7 +1,8 @@
-package dattien96.vn.googleio
+package dattien96.vn.googleio.ui
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import dattien96.vn.googleio.R
 
 class MainActivity : AppCompatActivity() {
 
