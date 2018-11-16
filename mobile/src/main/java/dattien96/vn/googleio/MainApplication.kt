@@ -1,6 +1,10 @@
 package dattien96.vn.googleio
 
-import android.app.Application
+import dagger.android.AndroidInjector
+import dagger.android.DaggerApplication
+import dattien96.vn.googleio.di.DaggerAppComponent
 
-class MainApplication: Application() {
+class MainApplication: DaggerApplication() {
+    override fun applicationInjector(): AndroidInjector<out DaggerApplication>
+            = DaggerAppComponent.builder().create(this)
 }

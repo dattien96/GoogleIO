@@ -1,0 +1,7 @@
+Di trong module này chỉ cung cấp các thành phần thuộc app như AppModule hay các Activity, Fragment
+module
+
+Các di cụ thể của từng act hay frg đc khai báo trong cùng package với act, frg đó
+
+Các class Anotation như scope, ViewModelKey hay module viewmodel sẽ được khai báo ở module shared.
+Vì những cái này còn đc dùng ở các module khác như module về tv
