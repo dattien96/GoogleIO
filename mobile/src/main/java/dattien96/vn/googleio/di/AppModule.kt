@@ -6,6 +6,9 @@ import android.net.wifi.WifiManager
 import dagger.Module
 import dagger.Provides
 import dattien96.vn.googleio.MainApplication
+import dattien96.vn.shared.data.prefs.PreferenceStorage
+import dattien96.vn.shared.data.prefs.SharedPreferenceStorage
+import javax.inject.Singleton
 
 /**
  * Provide các class cần dùng trong app scope
@@ -17,6 +20,11 @@ class AppModule {
     fun provideContext(application: MainApplication): Context {
         return application.applicationContext
     }
+
+    @Singleton
+    @Provides
+    fun providesPreferenceStorage(context: Context): PreferenceStorage =
+        SharedPreferenceStorage(context)
 
     @Provides
     fun providesWifiManager(context: Context): WifiManager =
