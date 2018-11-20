@@ -36,4 +36,21 @@
         <item name="android:paddingBottom">12dp</item>
     </style>
 
+    <style name="TextAppearance.IOSched.H1" parent="@style/TextAppearance.AppCompat.Headline">
+        <item name="android:fontFamily">@font/google_sans</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+
+    <style name="Widget.IOSched.OnboardingDeck" parent="@android:style/Widget.Material.TextView">
+        <item name="android:textAppearance">@style/TextAppearance.IOSched.OnboardingDeck</item>
+        <item name="android:lineSpacingMultiplier">@dimen/text_line_spacing</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="TextAppearance.IOSched.OnboardingDeck" parent="@style/TextAppearance.AppCompat.Body1">
+        <item name="android:fontFamily">@font/google_sans</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:lineSpacingMultiplier">@dimen/text_line_spacing</item>
+    </style>
 </resources>
