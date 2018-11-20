@@ -11,6 +11,18 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        buildConfigField "String", "CONFERENCE_TIMEZONE", "\"${conference_timezone}\""
+        buildConfigField "String", "CONFERENCE_DAY1_START", "\"${conference_day1_start}\""
+        buildConfigField "String", "CONFERENCE_DAY1_END", "\"${conference_day1_end}\""
+        buildConfigField "String", "CONFERENCE_DAY2_START", "\"${conference_day2_start}\""
+        buildConfigField "String", "CONFERENCE_DAY2_END", "\"${conference_day2_end}\""
+        buildConfigField "String", "CONFERENCE_DAY3_START", "\"${conference_day3_start}\""
+        buildConfigField "String", "CONFERENCE_DAY3_END", "\"${conference_day3_end}\""
+
+        buildConfigField "String",
+                "CONFERENCE_WIFI_OFFERING_START",
+                "\"${conference_wifi_offering_start}\""
     }
 
     buildTypes {
@@ -32,7 +44,7 @@ android {
 }
 
 dependencies {
-    api project(":model")
+    implementation project(":model")
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
     // Architecture Components

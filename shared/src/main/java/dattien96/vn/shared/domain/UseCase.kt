@@ -14,7 +14,6 @@ abstract class UseCase<in P,R> {
      * Fun invoke operator gọi ngầm khi instance của class được init
      */
     operator fun invoke(params: P, result: MutableLiveData<Result<R>>) {
-        result.value = Result.Loading
         try {
             taskScheduler.execute {
                 try {

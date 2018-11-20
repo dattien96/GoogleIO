@@ -4,6 +4,8 @@ import dagger.Module
 import dagger.android.ContributesAndroidInjector
 import dattien96.vn.googleio.ui.launch.LaunchActivity
 import dattien96.vn.googleio.ui.launch.LaunchModule
+import dattien96.vn.googleio.ui.onboarding.OnBoardingActivity
+import dattien96.vn.googleio.ui.onboarding.OnBoardingModule
 import dattien96.vn.shared.di.ActivityScoped
 
 /**
@@ -24,4 +26,8 @@ abstract class ActivityBindingModule {
     @ActivityScoped
     @ContributesAndroidInjector(modules = [LaunchModule::class])
     internal abstract fun launchActivity(): LaunchActivity
+
+    @ActivityScoped
+    @ContributesAndroidInjector(modules = [OnBoardingModule::class])
+    internal abstract fun onBoardingActivity(): OnBoardingActivity
 }
