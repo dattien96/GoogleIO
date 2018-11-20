@@ -42,6 +42,8 @@ object TimeUtils {
         )
     )
 
+    fun startDayPlusHour() = TimeUtils.ConferenceDays.first().start.plusHours(3L)
+
     enum class SessionRelativeTimeState { BEFORE, DURING, AFTER, UNKNOWN }
 
     /** Determine whether the current time is before, during, or after a Session's time slot **/
