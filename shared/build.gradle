@@ -53,7 +53,7 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-viewmodel:$rootProject.lifecycleVersion"
 
     // Utils
-    api "com.jakewharton.timber:timber:$rootProject.timberVersion"
+    implementation "com.jakewharton.timber:timber:$rootProject.timberVersion"
     implementation "com.google.code.gson:gson:$rootProject.gsonVersion"
     implementation "androidx.core:core-ktx:$rootProject.ktxVersion"
 

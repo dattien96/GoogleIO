@@ -28,7 +28,5 @@ class CountdownFragment : Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        return inflater.inflate(R.layout.fragment_countdown, container, false)
-    }
+    ): View? = inflater.inflate(R.layout.fragment_countdown, container, false)
 }
