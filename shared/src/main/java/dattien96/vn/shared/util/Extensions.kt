@@ -2,6 +2,8 @@ package dattien96.vn.shared.util
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
+import androidx.fragment.app.FragmentManager
+import androidx.fragment.app.FragmentTransaction
 import androidx.lifecycle.*
 
 /**
@@ -41,4 +43,12 @@ fun <X, Y> LiveData<X>.map(body: (X) -> Y): LiveData<Y> {
 
 fun <X, Y> LiveData<X>.switchMap(body: (X) -> LiveData<Y>): LiveData<Y> {
     return Transformations.switchMap(this, body)
+}
+
+/**
+ * Activity extension
+ */
+
+inline fun FragmentManager.inTransaction(func: FragmentTransaction.() -> FragmentTransaction) {
+    beginTransaction().func().commit()
 }
