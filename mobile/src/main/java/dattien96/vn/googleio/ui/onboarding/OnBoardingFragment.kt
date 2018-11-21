@@ -16,7 +16,7 @@ import com.google.samples.apps.iosched.ui.onboarding.CustomizeScheduleFragment
 import com.google.samples.apps.iosched.ui.onboarding.WelcomeFragment
 import dagger.android.support.DaggerFragment
 import dattien96.vn.googleio.databinding.FragmentOnboardingBinding
-import dattien96.vn.googleio.ui.MainActivity
+import dattien96.vn.googleio.ui.main.MainActivity
 import dattien96.vn.shared.result.EventObserver
 import dattien96.vn.shared.util.TimeUtils
 import dattien96.vn.shared.util.viewModelProvider
