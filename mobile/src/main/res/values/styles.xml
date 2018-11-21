@@ -22,6 +22,12 @@
         <item name="colorPrimary">@color/indigo</item>
         <item name="colorAccent">@color/indigo</item>
         <item name="colorControlActivated">?colorPrimary</item>
+        <item name="android:textViewStyle">@style/Widget.IOSched.TextView</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:statusBarColor">@color/status_bar</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <item name="android:navigationBarColor">@color/indigo_dark</item>
+        <item name="android:textColorTertiary">@color/text_color_tertiary</item>
     </style>
 
     <style name="Widget.IOSched.TextView" parent="@android:style/Widget.Material.TextView">
@@ -43,6 +49,7 @@
 
     <style name="TextAppearance.IOSched.ToolbarTitle" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
         <item name="android:fontFamily">@font/google_sans</item>
+        <item name="android:textColor">@android:color/black</item>
     </style>
 
     <style name="TextAppearance.IOSched.Tab" parent="@style/TextAppearance.MaterialComponents.Tab">
@@ -84,5 +91,30 @@
         <item name="android:textColor">?android:textColorSecondary</item>
         <item name="android:textSize">18sp</item>
         <item name="android:lineSpacingMultiplier">@dimen/text_line_spacing</item>
+    </style>
+
+    <style name="Widget.IOSched.BottomNav" parent="@style/Widget.MaterialComponents.BottomNavigationView.Colored">
+        <item name="itemIconTint">@color/bottom_nav_item</item>
+        <item name="itemTextAppearanceActive">@style/TextAppearance.IOSched.BottomNavigationView.Active</item>
+        <item name="itemTextAppearanceInactive">@style/TextAppearance.IOSched.BottomNavigationView</item>
+        <item name="labelVisibilityMode">selected</item>
+        <item name="android:theme">@style/ThemeOverlay.MaterialComponents.Dark</item>
+    </style>
+
+    <style name="TextAppearance.IOSched.BottomNavigationView" parent="@style/Widget.MaterialComponents.BottomNavigationView.Colored">
+        <item name="android:fontFamily">@font/google_sans</item>
+        <item name="android:textColor">@color/bottom_nav_item</item>
+    </style>
+
+    <style name="TextAppearance.IOSched.BottomNavigationView.Active">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Widget.AppBar" parent="@style/Widget.Design.AppBarLayout">
+        <item name="popupTheme">@style/AppTheme.PopupTheme</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:elevation">8dp</item>
+        <item name="android:orientation">vertical</item>
     </style>
 </resources>

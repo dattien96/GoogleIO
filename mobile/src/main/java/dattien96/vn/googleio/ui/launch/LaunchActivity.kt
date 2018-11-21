@@ -4,7 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.lifecycle.ViewModelProvider
 import dagger.android.support.DaggerAppCompatActivity
-import dattien96.vn.googleio.ui.MainActivity
+import dattien96.vn.googleio.ui.main.MainActivity
 import dattien96.vn.googleio.ui.onboarding.OnBoardingActivity
 import dattien96.vn.shared.result.EventObserver
 import dattien96.vn.shared.util.viewModelProvider
